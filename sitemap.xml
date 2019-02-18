@@ -4,6 +4,14 @@
     
     <url>
     
+      <loc>/post/my-article-name/</loc>
+      <lastmod>2019-02-18T16:52:37-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/author/admin/</loc>
     </url>
     
@@ -36,6 +44,7 @@
     <url>
     
       <loc>/</loc>
+      <lastmod>2019-02-18T16:52:37-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -44,6 +53,7 @@
     <url>
     
       <loc>/post/</loc>
+      <lastmod>2019-02-18T16:52:37-05:00</lastmod>
     </url>
     
   
