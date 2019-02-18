@@ -17,12 +17,8 @@
       
       <guid>/post/my-article-name/</guid>
       <description>&lt;p&gt;This is a first post about a Random Matrix theory.
-\begin{align}
-y &amp;amp;= ax+b,&lt;br /&gt;
-z &amp;amp;= cx+d.
-\end{align}&lt;/p&gt;
-
-&lt;p&gt;This is the end.&lt;/p&gt;
+$$f(x) = \int_0^{\infty} g(k)dk$$
+This is the end.&lt;/p&gt;
 </description>
     </item>
     
