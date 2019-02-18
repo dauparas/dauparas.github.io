@@ -14,10 +14,10 @@
     
     <item>
       <title>Random matrix theory</title>
-      <link>https://dauparas.github.io/post/my-article-name/</link>
+      <link>https://dauparas.github.io/post/rmt/</link>
       <pubDate>Mon, 18 Feb 2019 16:52:37 -0500</pubDate>
       
-      <guid>https://dauparas.github.io/post/my-article-name/</guid>
+      <guid>https://dauparas.github.io/post/rmt/</guid>
       <description>This is a first post about a Random Matrix theory. $$f(x) = \int_0^{\infty} g(k)dk$$ This is the end.</description>
     </item>
     
