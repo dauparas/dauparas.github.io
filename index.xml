@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Justas Dauparas on Justas Dauparas</title>
-    <link>/</link>
+    <link>https://dauparas.github.io/</link>
     <description>Recent content in Justas Dauparas on Justas Dauparas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Justas Dauparas &amp;copy 2019</copyright>
+    <copyright>&amp;copy; 2019 Justas Dauparas</copyright>
     <lastBuildDate>Mon, 18 Feb 2019 16:52:37 -0500</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Random matrix theory</title>
-      <link>/post/my-article-name/</link>
+      <link>https://dauparas.github.io/post/my-article-name/</link>
       <pubDate>Mon, 18 Feb 2019 16:52:37 -0500</pubDate>
       
-      <guid>/post/my-article-name/</guid>
+      <guid>https://dauparas.github.io/post/my-article-name/</guid>
       <description>&lt;p&gt;This is a first post about a Random Matrix theory.
 $$f(x) = \int_0^{\infty} g(k)dk$$
 This is the end.&lt;/p&gt;

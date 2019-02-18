@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Justas Dauparas</title>
-    <link>/tags/</link>
+    <link>https://dauparas.github.io/tags/</link>
     <description>Recent content in Tags on Justas Dauparas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Justas Dauparas &amp;copy 2019</copyright>
+    <copyright>&amp;copy; 2019 Justas Dauparas</copyright>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dauparas.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
