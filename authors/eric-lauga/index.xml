@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications on Justas Dauparas</title>
-    <link>https://dauparas.github.io/publication/</link>
-    <description>Recent content in Publications on Justas Dauparas</description>
+    <title>Eric Lauga on Justas Dauparas</title>
+    <link>https://dauparas.github.io/authors/eric-lauga/</link>
+    <description>Recent content in Eric Lauga on Justas Dauparas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Justas Dauparas</copyright>
-    <lastBuildDate>Tue, 29 May 2018 19:18:17 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 24 Feb 2018 20:25:06 -0500</lastBuildDate>
     
-	<atom:link href="https://dauparas.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dauparas.github.io/authors/eric-lauga/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Depth and nonlinearity induce implicit exploration</title>
-      <link>https://dauparas.github.io/publication/rl/</link>
-      <pubDate>Tue, 29 May 2018 19:18:17 -0500</pubDate>
-      
-      <guid>https://dauparas.github.io/publication/rl/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Self-organization of swimmers drives long-range fluid transport in bacterial colonies (submitted)</title>
@@ -27,15 +18,6 @@
       <pubDate>Sat, 24 Feb 2018 20:25:06 -0500</pubDate>
       
       <guid>https://dauparas.github.io/publication/self_organisation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Stokes flows near boundaries: bacteria, corners, and pumps (PhD thesis)</title>
-      <link>https://dauparas.github.io/publication/thesis/</link>
-      <pubDate>Sat, 24 Feb 2018 20:01:50 -0500</pubDate>
-      
-      <guid>https://dauparas.github.io/publication/thesis/</guid>
       <description></description>
     </item>
     

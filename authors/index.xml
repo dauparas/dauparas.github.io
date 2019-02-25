@@ -11,5 +11,68 @@
 	<atom:link href="https://dauparas.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Debasish Das</title>
+      <link>https://dauparas.github.io/authors/debasish-das/</link>
+      <pubDate>Sat, 24 Feb 2018 20:25:06 -0500</pubDate>
+      
+      <guid>https://dauparas.github.io/authors/debasish-das/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eric Lauga</title>
+      <link>https://dauparas.github.io/authors/eric-lauga/</link>
+      <pubDate>Sat, 24 Feb 2018 20:25:06 -0500</pubDate>
+      
+      <guid>https://dauparas.github.io/authors/eric-lauga/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Justas Dauparas</title>
+      <link>https://dauparas.github.io/authors/justas-dauparas/</link>
+      <pubDate>Tue, 29 May 2018 19:18:17 -0500</pubDate>
+      
+      <guid>https://dauparas.github.io/authors/justas-dauparas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Katja Hofmann</title>
+      <link>https://dauparas.github.io/authors/katja-hofmann/</link>
+      <pubDate>Tue, 29 May 2018 19:18:17 -0500</pubDate>
+      
+      <guid>https://dauparas.github.io/authors/katja-hofmann/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ryota Tomioka</title>
+      <link>https://dauparas.github.io/authors/ryota-tomioka/</link>
+      <pubDate>Tue, 29 May 2018 19:18:17 -0500</pubDate>
+      
+      <guid>https://dauparas.github.io/authors/ryota-tomioka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xu Haoran</title>
+      <link>https://dauparas.github.io/authors/xu-haoran/</link>
+      <pubDate>Sat, 24 Feb 2018 20:25:06 -0500</pubDate>
+      
+      <guid>https://dauparas.github.io/authors/xu-haoran/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yilin Wu</title>
+      <link>https://dauparas.github.io/authors/yilin-wu/</link>
+      <pubDate>Sat, 24 Feb 2018 20:25:06 -0500</pubDate>
+      
+      <guid>https://dauparas.github.io/authors/yilin-wu/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

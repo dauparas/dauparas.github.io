@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ryota Tomioka on Justas Dauparas</title>
+    <link>https://dauparas.github.io/authors/ryota-tomioka/</link>
+    <description>Recent content in Ryota Tomioka on Justas Dauparas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 Justas Dauparas</copyright>
+    <lastBuildDate>Tue, 29 May 2018 19:18:17 -0500</lastBuildDate>
+    
+	<atom:link href="https://dauparas.github.io/authors/ryota-tomioka/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Depth and nonlinearity induce implicit exploration</title>
+      <link>https://dauparas.github.io/publication/rl/</link>
+      <pubDate>Tue, 29 May 2018 19:18:17 -0500</pubDate>
+      
+      <guid>https://dauparas.github.io/publication/rl/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
