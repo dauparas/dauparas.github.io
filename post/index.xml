@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Justas Dauparas</copyright>
-    <lastBuildDate>Fri, 29 Mar 2019 11:26:20 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 29 Mar 2019 12:18:58 -0400</lastBuildDate>
     
 	<atom:link href="https://dauparas.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Autoregressive Models</title>
+      <link>https://dauparas.github.io/post/autoregressive/</link>
+      <pubDate>Fri, 29 Mar 2019 12:18:58 -0400</pubDate>
+      
+      <guid>https://dauparas.github.io/post/autoregressive/</guid>
+      <description>Let&amp;rsquo;s talk about Autoregressive Models!</description>
+    </item>
     
     <item>
       <title>Unsupervised learning</title>
@@ -22,24 +31,6 @@
 The course covers Deep Generative Models and Self-supervised Learning with the focus on the theoretical foundations as well as their newly enabled applications. Stay tuned!
 Topics:
  Autoregressive Models Lossless Compression Flow Models Latent Variable Models Bits-Back Coding Implicit Models  </description>
-    </item>
-    
-    <item>
-      <title>Autoregressive models</title>
-      <link>https://dauparas.github.io/post/autoregressive_models/</link>
-      <pubDate>Fri, 29 Mar 2019 11:19:07 -0400</pubDate>
-      
-      <guid>https://dauparas.github.io/post/autoregressive_models/</guid>
-      <description>Let&amp;rsquo;s learn about autoregressive models!</description>
-    </item>
-    
-    <item>
-      <title>Disentangled Representations</title>
-      <link>https://dauparas.github.io/post/disentangled_rep/</link>
-      <pubDate>Mon, 25 Feb 2019 12:24:27 -0500</pubDate>
-      
-      <guid>https://dauparas.github.io/post/disentangled_rep/</guid>
-      <description>What are disentangled representations? The recent paper &amp;ldquo;Towards a Definition of Disentangled Representations&amp;rdquo; lays out a mathematical definition using group and representation theories.</description>
     </item>
     
   </channel>
