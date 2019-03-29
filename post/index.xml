@@ -7,10 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Justas Dauparas</copyright>
-    <lastBuildDate>Mon, 25 Feb 2019 12:24:27 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 29 Mar 2019 11:26:20 -0400</lastBuildDate>
     
 	<atom:link href="https://dauparas.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Unsupervised learning</title>
+      <link>https://dauparas.github.io/post/unsupervised_learning/</link>
+      <pubDate>Fri, 29 Mar 2019 11:26:20 -0400</pubDate>
+      
+      <guid>https://dauparas.github.io/post/unsupervised_learning/</guid>
+      <description>I will be following the UC Berkeley&amp;rsquo;s CS294-158 Deep Unsupervised Learning course and sharing my short summaries and takeaways.
+The course covers Deep Generative Models and Self-supervised Learning with the focus on the theoretical foundations as well as their newly enabled applications. Stay tuned!
+Topics:
+ Autoregressive Models Lossless Compression Flow Models Latent Variable Models Bits-Back Coding Implicit Models  </description>
+    </item>
+    
+    <item>
+      <title>Autoregressive models</title>
+      <link>https://dauparas.github.io/post/autoregressive_models/</link>
+      <pubDate>Fri, 29 Mar 2019 11:19:07 -0400</pubDate>
+      
+      <guid>https://dauparas.github.io/post/autoregressive_models/</guid>
+      <description>Let&amp;rsquo;s learn about autoregressive models!</description>
+    </item>
     
     <item>
       <title>Disentangled Representations</title>

@@ -7,8 +7,41 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Justas Dauparas</copyright>
-    <lastBuildDate>Mon, 25 Feb 2019 12:24:27 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 29 Mar 2019 11:26:20 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Unsupervised learning</title>
+      <link>https://dauparas.github.io/post/unsupervised_learning/</link>
+      <pubDate>Fri, 29 Mar 2019 11:26:20 -0400</pubDate>
+      
+      <guid>https://dauparas.github.io/post/unsupervised_learning/</guid>
+      <description>&lt;p&gt;I will be following the UC Berkeley&amp;rsquo;s &lt;a href=&#34;https://sites.google.com/view/berkeley-cs294-158-sp19/home&#34; target=&#34;_blank&#34;&gt;CS294-158 Deep Unsupervised Learning course&lt;/a&gt; and sharing my short summaries and takeaways.&lt;/p&gt;
+
+&lt;p&gt;The course covers Deep Generative Models and Self-supervised Learning with the focus on the theoretical foundations as well as their newly enabled applications. Stay tuned!&lt;/p&gt;
+
+&lt;p&gt;Topics:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;{ {&amp;lt; relref &amp;quot;autoregressive_models.md&amp;quot; &amp;gt;}}&#34; target=&#34;_blank&#34;&gt;Autoregressive Models&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Lossless Compression&lt;/li&gt;
+&lt;li&gt;Flow Models&lt;/li&gt;
+&lt;li&gt;Latent Variable Models&lt;/li&gt;
+&lt;li&gt;Bits-Back Coding&lt;/li&gt;
+&lt;li&gt;Implicit Models&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Autoregressive models</title>
+      <link>https://dauparas.github.io/post/autoregressive_models/</link>
+      <pubDate>Fri, 29 Mar 2019 11:19:07 -0400</pubDate>
+      
+      <guid>https://dauparas.github.io/post/autoregressive_models/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s learn about autoregressive models!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Disentangled Representations</title>
