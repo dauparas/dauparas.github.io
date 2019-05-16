@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Justas Dauparas</copyright>
-    <lastBuildDate>Fri, 29 Mar 2019 12:18:58 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 29 Mar 2019 16:19:43 -0400</lastBuildDate>
     
 	<atom:link href="https://dauparas.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Nonlinear ICA</title>
+      <link>https://dauparas.github.io/post/nonlinear_ica/</link>
+      <pubDate>Fri, 29 Mar 2019 16:19:43 -0400</pubDate>
+      
+      <guid>https://dauparas.github.io/post/nonlinear_ica/</guid>
+      <description>I have recently got interested in representation learning, especially in disentangled representations of the data. The idea is to find a representation of the high dimensional data like images where the features in the representation space would be &amp;ldquo;disentangled&amp;rdquo;. It is hard to define what is &amp;ldquo;the disentangled representation&amp;rdquo;, but anyway.
+I came across this recent paper called &amp;ldquo;Nonlinear ICA Using Auxiliary Variables and Generalized Contrastive Learning&amp;rdquo; and was very curious to try it out.</description>
+    </item>
     
     <item>
       <title>Autoregressive Models</title>

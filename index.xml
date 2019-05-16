@@ -7,8 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Justas Dauparas</copyright>
-    <lastBuildDate>Fri, 29 Mar 2019 12:18:58 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 29 Mar 2019 16:19:43 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Nonlinear ICA</title>
+      <link>https://dauparas.github.io/post/nonlinear_ica/</link>
+      <pubDate>Fri, 29 Mar 2019 16:19:43 -0400</pubDate>
+      
+      <guid>https://dauparas.github.io/post/nonlinear_ica/</guid>
+      <description>&lt;p&gt;I have recently got interested in representation learning, especially in disentangled representations of the data. The idea is to find a representation of the high dimensional data like images where the features in the representation space would be &amp;ldquo;disentangled&amp;rdquo;. It is hard to define what is &amp;ldquo;the disentangled representation&amp;rdquo;, but anyway.&lt;/p&gt;
+
+&lt;p&gt;I came across this recent paper called &lt;a href=&#34;https://arxiv.org/pdf/1805.08651.pdf&#34; target=&#34;_blank&#34;&gt;&amp;ldquo;Nonlinear ICA Using Auxiliary Variables and Generalized Contrastive Learning&amp;rdquo;&lt;/a&gt; and was very curious to try it out.&lt;/p&gt;
+
+&lt;p&gt;Let me try to summarize the basic idea from the paper.&lt;/p&gt;
+
+&lt;p&gt;Authors propose a general framework for nonlinear ICA. It is based on augmenting the data by an auxiliary variable, such as the time index, the history of the time series, labels, or any other available information and learning to discriminate between true augmented data, or data
+in which the auxiliary variable has been randomized.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Autoregressive Models</title>
