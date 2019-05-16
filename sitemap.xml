@@ -4,24 +4,16 @@
     
     <url>
     
-      <loc>https://dauparas.github.io/post/nonlinear_ica/</loc>
-      <lastmod>2019-03-29T16:19:43-04:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://dauparas.github.io/post/autoregressive/</loc>
-      <lastmod>2019-03-29T12:18:58-04:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>https://dauparas.github.io/post/unsupervised_learning/</loc>
       <lastmod>2019-03-29T11:26:20-04:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://dauparas.github.io/publication/unified/</loc>
+      <lastmod>2019-03-03T20:01:19-05:00</lastmod>
     </url>
     
   
@@ -84,7 +76,7 @@
     <url>
     
       <loc>https://dauparas.github.io/publication_types/0/</loc>
-      <lastmod>2018-05-29T19:18:17-05:00</lastmod>
+      <lastmod>2019-03-03T20:01:19-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -134,8 +126,17 @@
     
     <url>
     
+      <loc>https://dauparas.github.io/authors/haobo-wang/</loc>
+      <lastmod>2019-03-03T20:01:19-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://dauparas.github.io/</loc>
-      <lastmod>2019-03-29T16:19:43-04:00</lastmod>
+      <lastmod>2019-03-29T11:26:20-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -144,7 +145,7 @@
     <url>
     
       <loc>https://dauparas.github.io/authors/justas-dauparas/</loc>
-      <lastmod>2018-05-29T19:18:17-05:00</lastmod>
+      <lastmod>2019-03-03T20:01:19-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -161,8 +162,26 @@
     
     <url>
     
+      <loc>https://dauparas.github.io/authors/mor-nitzan/</loc>
+      <lastmod>2019-03-03T20:01:19-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://dauparas.github.io/authors/peter-koo/</loc>
+      <lastmod>2019-03-03T20:01:19-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://dauparas.github.io/post/</loc>
-      <lastmod>2019-03-29T16:19:43-04:00</lastmod>
+      <lastmod>2019-03-29T11:26:20-04:00</lastmod>
     </url>
     
   
@@ -170,7 +189,7 @@
     <url>
     
       <loc>https://dauparas.github.io/publication_types/</loc>
-      <lastmod>2018-05-29T19:18:17-05:00</lastmod>
+      <lastmod>2019-03-03T20:01:19-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -179,7 +198,8 @@
     <url>
     
       <loc>https://dauparas.github.io/publication/</loc>
-      <lastmod>2018-05-29T19:18:17-05:00</lastmod>
+      <lastmod>2019-03-03T20:01:19-05:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -195,6 +215,15 @@
     
       <loc>https://dauparas.github.io/authors/ryota-tomioka/</loc>
       <lastmod>2018-05-29T19:18:17-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://dauparas.github.io/authors/sergey-ovchinnikov/</loc>
+      <lastmod>2019-03-03T20:01:19-05:00</lastmod>
       <priority>0</priority>
     </url>
     

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mor Nitzan on Justas Dauparas</title>
+    <link>https://dauparas.github.io/authors/mor-nitzan/</link>
+    <description>Recent content in Mor Nitzan on Justas Dauparas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 Justas Dauparas</copyright>
+    <lastBuildDate>Sun, 03 Mar 2019 20:01:19 -0500</lastBuildDate>
+    
+	<atom:link href="https://dauparas.github.io/authors/mor-nitzan/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Unified framework for multivariate distributions in biological sequences</title>
+      <link>https://dauparas.github.io/publication/unified/</link>
+      <pubDate>Sun, 03 Mar 2019 20:01:19 -0500</pubDate>
+      
+      <guid>https://dauparas.github.io/publication/unified/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

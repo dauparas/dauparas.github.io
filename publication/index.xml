@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Justas Dauparas</copyright>
-    <lastBuildDate>Tue, 29 May 2018 19:18:17 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 03 Mar 2019 20:01:19 -0500</lastBuildDate>
     
 	<atom:link href="https://dauparas.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Unified framework for multivariate distributions in biological sequences</title>
+      <link>https://dauparas.github.io/publication/unified/</link>
+      <pubDate>Sun, 03 Mar 2019 20:01:19 -0500</pubDate>
+      
+      <guid>https://dauparas.github.io/publication/unified/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Depth and nonlinearity induce implicit exploration</title>
@@ -22,7 +31,7 @@
     </item>
     
     <item>
-      <title>Self-organization of swimmers drives long-range fluid transport in bacterial colonies (submitted)</title>
+      <title>Self-organization of swimmers drives long-range fluid transport in bacterial colonies</title>
       <link>https://dauparas.github.io/publication/self_organisation/</link>
       <pubDate>Sat, 24 Feb 2018 20:25:06 -0500</pubDate>
       
