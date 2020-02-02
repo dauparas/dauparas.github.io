@@ -6,49 +6,115 @@
     <description>Recent content in Justas Dauparas on Justas Dauparas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2019 Justas Dauparas</copyright>
-    <lastBuildDate>Fri, 29 Mar 2019 11:26:20 -0400</lastBuildDate>
+    <copyright>&amp;copy; 2020 Justas Dauparas</copyright>
+    <lastBuildDate>Fri, 07 Jun 2019 06:44:46 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Unsupervised learning</title>
-      <link>https://dauparas.github.io/post/unsupervised_learning/</link>
+      <title>Pseudolikelihood</title>
+      <link>https://dauparas.github.io/post/multivariate/</link>
+      <pubDate>Fri, 07 Jun 2019 06:44:46 -0400</pubDate>
+      
+      <guid>https://dauparas.github.io/post/multivariate/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/sokrypton/seqmodels/blob/master/seqmodels.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bayesian inference&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Modelling sequences&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We would like to model a distribution of some sequences of lenght $L$ where every element in the sequence can take $K$ different values. Write the parametric probability distribution for the sequence as a joint probability of elements in the sequence, i.e.
+\begin{align}
+p(\mathbf{x};\boldsymbol{\theta})=p(x_1, x_2,&amp;hellip;, x_L;\boldsymbol{\theta}),
+\end{align}
+where $\boldsymbol{\theta}$ are parameters of the distribution. Now suppose that we got $N$ examples drawn from this distribution. Denote the data as $\mathbf{X}\in \mathbb{R}^{N\times L\times K}$. The goal is to find $\boldsymbol{\theta}$ that explains the data.&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+p(\boldsymbol{\theta}\vert \mathbf{X}) = \frac{p(\mathbf{X}\vert \boldsymbol{\theta})p(\boldsymbol{\theta})}{\sum_{\boldsymbol{\theta}}p(\mathbf{X}\vert \boldsymbol{\theta})p(\boldsymbol{\theta})}.
+\end{align}&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Partition function&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Suppose we come up with a probabilistic model which has an unnormalized probability distribution $\tilde{p}(\mathbf{x} ; \boldsymbol{\theta})$. To obtain a normalized probability distribution $p(\mathbf{x} ; \boldsymbol{\theta})$ we divide by the sum of all possible values that $\mathbf{x}$ can take, i.e.
+$$p(\mathbf{x} ; \boldsymbol{\theta})=\frac{\tilde{p}(\mathbf{x} ; \boldsymbol{\theta})}{\sum_{\mathbf{x}}\tilde{p}(\mathbf{x} ; \boldsymbol{\theta})}=\frac{\tilde{p}(\mathbf{x} ; \boldsymbol{\theta})}{Z(\boldsymbol{\theta})}.$$
+The letter Z stands for the German word &lt;em&gt;Zustandssumme&lt;/em&gt;, &amp;ldquo;sum over states&amp;rdquo;. It is called the &lt;strong&gt;partition function&lt;/strong&gt; because it encodes how the probabilities are partitioned among the different states, based on their individual unnormalized probabilities. The problem is that the partition function often cannot be calculated exactly due to the large number of elements in the sum. For sequences we would have $K^L$ elements. The gradient of the log-likelihood with respect to the parameters has a term corresponding to the gradient of the partition function:
+$$\nabla_{\boldsymbol{\theta}}\log{p(\mathbf{x} ; \boldsymbol{\theta})}= \nabla_{\boldsymbol{\theta}}\log{\tilde{p}(\mathbf{x} ; \boldsymbol{\theta})-\nabla_{\boldsymbol{\theta}}\log{Z(\boldsymbol{\theta})}}$$
+and this makes learning the model often intractable. For models that have non-zero probability for every state, i.e. $\tilde{p}(\mathbf{x} ; \boldsymbol{\theta})&amp;gt;0$ for all $\mathbf{x}$, we can write $\tilde{p}(\mathbf{x} ; \boldsymbol{\theta})=\exp (\log \tilde{p}(\mathbf{x}))$ and then
+$$\begin{align}
+\label{eq:1}
+\nabla_{\boldsymbol{\theta}} \log Z(\boldsymbol{\theta})&amp;amp;=\frac{\sum_{\mathbf{x}} \nabla_{\boldsymbol{\theta}} \tilde{p}(\mathbf{x}; \boldsymbol{\theta})}{Z(\boldsymbol{\theta})}=\frac{\sum_{\mathbf{x}} \nabla_{\boldsymbol{\theta}} \exp (\log \tilde{p}(\mathbf{x}))}{Z}=\sum_{\mathbf{x}} p(\mathbf{x}) \nabla_{\boldsymbol{\theta}} \log \tilde{p}(\mathbf{x}), \\&lt;br /&gt;
+\color{green}{\nabla_{\boldsymbol{\theta}} \log Z(\boldsymbol{\theta})}&amp;amp;\color{green}{=}\color{green}{\mathbb{E}_{\mathbf{x} \sim p(\mathbf{x})} \nabla_{\boldsymbol{\theta}} \log \tilde{p}(\mathbf{x})}.
+\end{align}$$
+The last identity is the basis (hence in green) for a variety of Monte Carlo methods for approximately maximizing the likelihood of models with intractable partition functions. Read more about partition function here: &lt;a href=&#34;https://www.deeplearningbook.org/contents/partition.html&#34; target=&#34;_blank&#34;&gt;https://www.deeplearningbook.org/contents/partition.html&lt;/a&gt; .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pseudolikelihood&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Notice that it is easy to compute ratios of probabilities in unnormalized probabilistic models. This is because the partition function appears in both the numerator and the denominator of the ratio and cancels out:
+\begin{align}
+\frac{p(\mathbf{x};\boldsymbol{\theta})}{p(\mathbf{y};\boldsymbol{\theta})}=\frac{\frac{1}{Z} \tilde{p}(\mathbf{x};\boldsymbol{\theta})}{\frac{1}{Z} \tilde{p}(\mathbf{y};\boldsymbol{\theta})}=\frac{\tilde{p}(\mathbf{x};\boldsymbol{\theta})}{\tilde{p}(\mathbf{y};\boldsymbol{\theta})}.
+\end{align}&lt;/p&gt;
+
+&lt;p&gt;Moreover, using the chain rule of probability we can write the log-likelihood:
+\begin{align}
+\log p(\mathbf{x};\boldsymbol{\theta})=\log p\left(x_{1};\boldsymbol{\theta}\right)+\log p\left(x_{2} | x_{1};\boldsymbol{\theta}\right)+\cdots+p\left(x_{L} | \mathbf{x}_{1 : L-1};\boldsymbol{\theta}\right).
+\end{align}
+The &lt;strong&gt;pseudolikelihood&lt;/strong&gt; (&lt;a href=&#34;https://pdfs.semanticscholar.org/1406/b6d771c270aff4dcb1c96e4f5c62c02c00a5.pdf&#34; target=&#34;_blank&#34;&gt;Besag, 1975&lt;/a&gt;) objective function is given by:
+\begin{align}
+\mathcal{L}_{pl}(\mathbf{x};\boldsymbol{\theta})=\sum_{\ell=1}^{L} \log p\left(x_{\ell} | \boldsymbol{x}_{-\ell};\boldsymbol{\theta}\right)
+\end{align}
+If each random variable has $K$ diﬀerent values, this requires only $K\times L$ evaluations of $\tilde{p}$ to compute, as opposed to the $K^L$ evaluations needed to compute the partition function.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Markov Random Field with pseudolikelihood&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;For the Markov Random Field we assume that given parameters $\color{green}{\mathbf{b}}\in \mathbb{R}^{L\times K}$ and $\color{red}{\mathbf{W}}\in \mathbb{R}^{L\times K\times L\times K}$ the positions are independent
+\begin{align}
+\tilde{p}(\mathbf{x}\vert\boldsymbol{\theta}) &amp;amp;= \tilde{p}(\mathbf{x}\vert\color{green}{\mathbf{b}}, \color{red}{\mathbf{W}})=\prod_{\ell=1}^{L}\tilde{p}(x_{\ell}\vert\color{green}{\mathbf{b}}, \color{red}{\mathbf{W}}),\\&lt;br /&gt;
+\tilde{p}(x_{\ell}\vert\color{green}{\mathbf{b}}, \color{red}{\mathbf{W}})&amp;amp;=\exp{\left(\sum_{k=1}^{K}\color{green}{b_{\ell k}}x_{\ell k}+\sum_{k=1}^{K}\sum_{s=\ell+1}^{L}\sum_{r=1}^{K} x_{rs} \color{red}{W_{rs\ell k}}x_{\ell k}\right)}
+\end{align}&lt;/p&gt;
+
+&lt;p&gt;Suppose we are given $N$ sequences of length $L$ and every element in the sequence has an alphabet of size $K$. Denote this data by $\mathbf{X}\in \mathbb{R}^{N\times L\times K}$. The sum over alphabet adds up to one for every sequence and every element, i.e. $\sum_{k=1}^K X_{nlk} = 1$ for all $n\in {1,2,&amp;hellip;,N}$ and $l\in {1,2,&amp;hellip;,L}$. Take the simple model with two parameters
+\begin{align}
+l(\mathbf{x};\color{green}{\boldsymbol{b}},\color{red}{\boldsymbol{W}})=\sum_{\ell=1}^{L} \log p\left(x_{l} | \boldsymbol{x}_{-l};\color{green}{\boldsymbol{b}},\color{red}{\boldsymbol{W}}\right)=\sum_{l=1}^{L} \log{\frac{p\left(x_{l},\boldsymbol{x}_{-l};\color{green}{\boldsymbol{b}},\color{red}{\boldsymbol{W}}\right)}{\sum_{x_l}p\left(x_{l},\boldsymbol{x}_{-l};\color{green}{\boldsymbol{b}},\color{red}{\boldsymbol{W}}\right)}}
+\end{align}
+\begin{align}
+\tilde{p}(\mathbf{X}; \color{green}{\boldsymbol{b}},\color{red}{\boldsymbol{W}})&amp;amp;=\prod_{l=1}^{L}\exp{\left(\sum_{k=1}^{K}\color{green}{b_{lk}}X_{lk}+\sum_{k=1}^{K}\sum_{s=l+1}^{L}\sum_{r=1}^{K} X_{rs} \color{red}{W_{rslk}}X_{lk}\right)},\\&lt;br /&gt;
+Z(\color{green}{\boldsymbol{b}},\color{red}{\boldsymbol{W}})&amp;amp;=\sum_{\mathbf{X}}\tilde{p}(\mathbf{X}; \color{green}{\boldsymbol{b}},\color{red}{\boldsymbol{W}})=\sum_{k_1=1}^{K}\sum_{k_2=1}^{K}&amp;hellip;\sum_{k_L=1}^{K}\tilde{p}(\mathbf{x_1}(k_1), \mathbf{x_2}(k_2),&amp;hellip;\mathbf{x_L}(k_L); \color{green}{\boldsymbol{b}},\color{red}{\boldsymbol{W}}),\\&lt;br /&gt;
+Z(\color{green}{\boldsymbol{b}},\color{red}{\boldsymbol{W}})&amp;amp;=\prod_{l=1}^{L} \sum
+\end{align}&lt;/p&gt;
+
+&lt;p&gt;In progress!&lt;/p&gt;
+
+&lt;!-- ![image alt text](./1.png) --&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;./1.png&#34; alt=&#34;Figure 1. The data matrix $\mathbf{X}\in \mathbb{R}^{N\times LK} = \mathbb{R}^{N\times L\times K}$ has $N$ sequences, every sequence is of length $L$ and every position in the sequence can have $K$ different states. In this picture states are encoded using a one-hot representation.&#34; width=&#34;420&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  
+  &lt;p&gt;
+    Figure 1. The data matrix $\mathbf{X}\in \mathbb{R}^{N\times LK} = \mathbb{R}^{N\times L\times K}$ has $N$ sequences, every sequence is of length $L$ and every position in the sequence can have $K$ different states. In this picture states are encoded using a one-hot representation.
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Theoretical Physics</title>
+      <link>https://dauparas.github.io/links/physics/</link>
       <pubDate>Fri, 29 Mar 2019 11:26:20 -0400</pubDate>
       
-      <guid>https://dauparas.github.io/post/unsupervised_learning/</guid>
-      <description>&lt;p&gt;I will be following the UC Berkeley&amp;rsquo;s &lt;a href=&#34;https://sites.google.com/view/berkeley-cs294-158-sp19/home&#34; target=&#34;_blank&#34;&gt;CS294-158 Deep Unsupervised Learning course&lt;/a&gt; and sharing my short summaries and takeaways.&lt;/p&gt;
-
-&lt;p&gt;The course covers Deep Generative Models and Self-supervised Learning with the focus on the theoretical foundations as well as their newly enabled applications. Stay tuned!&lt;/p&gt;
-
-&lt;p&gt;Topics:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Autoregressive Models&lt;/li&gt;
-&lt;li&gt;Lossless Compression&lt;/li&gt;
-&lt;li&gt;Flow Models&lt;/li&gt;
-&lt;li&gt;Latent Variable Models&lt;/li&gt;
-&lt;li&gt;Bits-Back Coding&lt;/li&gt;
-&lt;li&gt;Implicit Models&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Introduction&lt;/p&gt;
-
-&lt;p&gt;What is Unsupervised Learning??? It is a type of machine learning algorithm that draws inferences from data which does not have labeled responses, so no direct classification or regression can be done.
-* Generative Models
-* Self-supervised Learning (labels are given in a clever way), like time, one patch above the other.&lt;/p&gt;
-
-&lt;p&gt;Intelligence is all about compression.&lt;/p&gt;
-
-&lt;p&gt;Applications:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;General novel data&lt;/li&gt;
-&lt;li&gt;Compression&lt;/li&gt;
-&lt;li&gt;Improve downstream tasks&lt;/li&gt;
-&lt;li&gt;Flexible building blocks for reusing in other problems&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;VAEs, GANs, zebras, bigGAN (maybe latent space is useful), styleGAN, WaveNet, video generation, text generation, compression (WaveOne vs JPEG), sentiment detection.&lt;/p&gt;
+      <guid>https://dauparas.github.io/links/physics/</guid>
+      <description>&lt;p&gt;This is a link to theoretical physics.&lt;/p&gt;
 </description>
     </item>
     
@@ -80,39 +146,49 @@
     </item>
     
     <item>
-      <title>Stokes flows near boundaries: bacteria, corners, and pumps (PhD thesis)</title>
-      <link>https://dauparas.github.io/publication/thesis/</link>
-      <pubDate>Sat, 24 Feb 2018 20:01:50 -0500</pubDate>
-      
-      <guid>https://dauparas.github.io/publication/thesis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Leading-order Stokes flows near a corner</title>
+      <title></title>
       <link>https://dauparas.github.io/publication/corner_flows/</link>
-      <pubDate>Sat, 24 Feb 2018 20:01:39 -0500</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dauparas.github.io/publication/corner_flows/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Helical micropumps near surfaces</title>
+      <title></title>
+      <link>https://dauparas.github.io/publication/flagellar_flows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dauparas.github.io/publication/flagellar_flows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://dauparas.github.io/publication/helical_micropumps/</link>
-      <pubDate>Fri, 19 Jan 2018 20:01:02 -0500</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dauparas.github.io/publication/helical_micropumps/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Flagellar flows around bacterial swarms</title>
-      <link>https://dauparas.github.io/publication/flagellar_flows/</link>
-      <pubDate>Wed, 03 Aug 2016 20:01:19 -0500</pubDate>
+      <title></title>
+      <link>https://dauparas.github.io/publication/thesis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dauparas.github.io/publication/flagellar_flows/</guid>
+      <guid>https://dauparas.github.io/publication/thesis/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Theoretical Physics</title>
+      <link>https://dauparas.github.io/talk/physics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dauparas.github.io/talk/physics/</guid>
+      <description>&lt;p&gt;This is a link to theoretical physics.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

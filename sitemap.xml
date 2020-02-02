@@ -4,7 +4,15 @@
     
     <url>
     
-      <loc>https://dauparas.github.io/post/unsupervised_learning/</loc>
+      <loc>https://dauparas.github.io/post/multivariate/</loc>
+      <lastmod>2019-06-07T06:44:46-04:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://dauparas.github.io/links/physics/</loc>
       <lastmod>2019-03-29T11:26:20-04:00</lastmod>
     </url>
     
@@ -36,8 +44,7 @@
     
     <url>
     
-      <loc>https://dauparas.github.io/publication/thesis/</loc>
-      <lastmod>2018-02-24T20:01:50-05:00</lastmod>
+      <loc>https://dauparas.github.io/author/admin/</loc>
     </url>
     
   
@@ -45,15 +52,6 @@
     <url>
     
       <loc>https://dauparas.github.io/publication/corner_flows/</loc>
-      <lastmod>2018-02-24T20:01:39-05:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://dauparas.github.io/publication/helical_micropumps/</loc>
-      <lastmod>2018-01-19T20:01:02-05:00</lastmod>
     </url>
     
   
@@ -61,14 +59,20 @@
     <url>
     
       <loc>https://dauparas.github.io/publication/flagellar_flows/</loc>
-      <lastmod>2016-08-03T20:01:19-05:00</lastmod>
     </url>
     
   
     
     <url>
     
-      <loc>https://dauparas.github.io/author/admin/</loc>
+      <loc>https://dauparas.github.io/publication/helical_micropumps/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://dauparas.github.io/publication/thesis/</loc>
     </url>
     
   
@@ -136,7 +140,7 @@
     <url>
     
       <loc>https://dauparas.github.io/</loc>
-      <lastmod>2019-03-29T11:26:20-04:00</lastmod>
+      <lastmod>2019-06-07T06:44:46-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -162,9 +166,31 @@
     
     <url>
     
+      <loc>https://dauparas.github.io/links/</loc>
+      <lastmod>2019-03-29T11:26:20-04:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://dauparas.github.io/authors/mor-nitzan/</loc>
       <lastmod>2019-03-03T20:01:19-05:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://dauparas.github.io/talk/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://dauparas.github.io/talks/</loc>
     </url>
     
   
@@ -181,7 +207,7 @@
     <url>
     
       <loc>https://dauparas.github.io/post/</loc>
-      <lastmod>2019-03-29T11:26:20-04:00</lastmod>
+      <lastmod>2019-06-07T06:44:46-04:00</lastmod>
     </url>
     
   
@@ -200,13 +226,6 @@
       <loc>https://dauparas.github.io/publication/</loc>
       <lastmod>2019-03-03T20:01:19-05:00</lastmod>
       <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://dauparas.github.io/talk/</loc>
     </url>
     
   
@@ -233,6 +252,13 @@
     
       <loc>https://dauparas.github.io/tags/</loc>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://dauparas.github.io/talk/physics/</loc>
     </url>
     
   
