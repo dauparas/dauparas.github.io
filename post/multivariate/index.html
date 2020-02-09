@@ -28,9 +28,7 @@
   
     
   
-  <meta name="description" content="Bayesian inference
-Modelling sequences
-We would like to model a distribution of some sequences of lenght $L$ where every element in the sequence can take $K$ different values. Write the parametric probability distribution for the sequence as a joint probability of elements in the sequence, i.e. \begin{align} p(\mathbf{x};\boldsymbol{\theta})=p(x_1, x_2,&hellip;, x_L;\boldsymbol{\theta}), \end{align} where $\boldsymbol{\theta}$ are parameters of the distribution. Now suppose that we got $N$ examples drawn from this distribution. Denote the data as $\mathbf{X}\in \mathbb{R}^{N\times L\times K}$.">
+  <meta name="description" content="Revealing the functional sites of biological sequences, such as evolutionary conserved.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://dauparas.github.io/post/multivariate/">
@@ -138,10 +136,8 @@ We would like to model a distribution of some sequences of lenght $L$ where ever
   
   <meta property="og:site_name" content="Justas Dauparas">
   <meta property="og:url" content="https://dauparas.github.io/post/multivariate/">
-  <meta property="og:title" content="Pseudolikelihood | Justas Dauparas">
-  <meta property="og:description" content="Bayesian inference
-Modelling sequences
-We would like to model a distribution of some sequences of lenght $L$ where every element in the sequence can take $K$ different values. Write the parametric probability distribution for the sequence as a joint probability of elements in the sequence, i.e. \begin{align} p(\mathbf{x};\boldsymbol{\theta})=p(x_1, x_2,&hellip;, x_L;\boldsymbol{\theta}), \end{align} where $\boldsymbol{\theta}$ are parameters of the distribution. Now suppose that we got $N$ examples drawn from this distribution. Denote the data as $\mathbf{X}\in \mathbb{R}^{N\times L\times K}$."><meta property="og:image" content="https://dauparas.github.io/img/icon-192.png">
+  <meta property="og:title" content="Modeling biological sequences | Justas Dauparas">
+  <meta property="og:description" content="Revealing the functional sites of biological sequences, such as evolutionary conserved."><meta property="og:image" content="https://dauparas.github.io/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2019-06-07T06:44:46-04:00">
@@ -153,7 +149,7 @@ We would like to model a distribution of some sequences of lenght $L$ where ever
 
   
 
-  <title>Pseudolikelihood | Justas Dauparas</title>
+  <title>Modeling biological sequences | Justas Dauparas</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -312,8 +308,10 @@ We would like to model a distribution of some sequences of lenght $L$ where ever
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Pseudolikelihood</h1>
+  <h1 itemprop="name">Modeling biological sequences</h1>
 
+  
+  <p class="page-subtitle">by Justas Dauparas</p>
   
 
   
@@ -344,7 +342,7 @@ We would like to model a distribution of some sequences of lenght $L$ where ever
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    3 min read
+    5 min read
   </span>
   
 
@@ -362,7 +360,7 @@ We would like to model a distribution of some sequences of lenght $L$ where ever
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Pseudolikelihood&amp;url=https%3a%2f%2fdauparas.github.io%2fpost%2fmultivariate%2f"
+         href="https://twitter.com/intent/tweet?text=Modeling%20biological%20sequences&amp;url=https%3a%2f%2fdauparas.github.io%2fpost%2fmultivariate%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
@@ -376,21 +374,21 @@ We would like to model a distribution of some sequences of lenght $L$ where ever
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fdauparas.github.io%2fpost%2fmultivariate%2f&amp;title=Pseudolikelihood"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fdauparas.github.io%2fpost%2fmultivariate%2f&amp;title=Modeling%20biological%20sequences"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fdauparas.github.io%2fpost%2fmultivariate%2f&amp;title=Pseudolikelihood"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fdauparas.github.io%2fpost%2fmultivariate%2f&amp;title=Modeling%20biological%20sequences"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Pseudolikelihood&amp;body=https%3a%2f%2fdauparas.github.io%2fpost%2fmultivariate%2f">
+         href="mailto:?subject=Modeling%20biological%20sequences&amp;body=https%3a%2f%2fdauparas.github.io%2fpost%2fmultivariate%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -430,19 +428,58 @@ We would like to model a distribution of some sequences of lenght $L$ where ever
     <div class="article-style" itemprop="articleBody">
       <p><a href="https://colab.research.google.com/github/sokrypton/seqmodels/blob/master/seqmodels.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
 
-<p><strong>Bayesian inference</strong></p>
+<p><a href="https://arxiv.org/pdf/1906.02598.pdf" target="_parent"><img src="./arxiv_logo.jpg" width=30 height=30 alt="arxiv.org"/></a></p>
+
+<p>Check out Google Colab and arXiv links above!</p>
+
+<p><strong>Motivation</strong></p>
+
+<p>Suppose that someone gives you $N$ sequences. Every sequence is of the same length $L$ and every element in a sequence can take $K$ different values. For example those sequences could be aligned DNA sequences which are made up of four base pairs ($K=4$), or aligned protein sequences which are made up of twenty canonical amino acids ($K=20$). Read more <a href="https://en.wikipedia.org/wiki/Multiple_sequence_alignment" target="_blank">here</a> about how multiple sequences are aligned. Denote the given data as $\mathbf{X}$. The question is can you build a model that describes the given data.</p>
+
+
+
+
+<figure>
+
+<img src="./pseudo_fig1.svg" alt="&lt;b&gt;Figure 1.&lt;/b&gt; The given data $\mathbf{X}$ has $N$ sequences, every sequence is of length $L$ and every position in the sequence can take $K$ different values. In this cartoon there are 6 sequences, of length 12 and there are 3 possible values - yellow, green, or blue." width="420" />
+
+
+
+<figcaption data-pre="Figure " data-post=":" >
+  
+  <p>
+    <b>Figure 1.</b> The given data $\mathbf{X}$ has $N$ sequences, every sequence is of length $L$ and every position in the sequence can take $K$ different values. In this cartoon there are 6 sequences, of length 12 and there are 3 possible values - yellow, green, or blue.
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+
+<p><strong>Bayesian Modelling</strong></p>
+
+<p>Given the data $\mathbf{X}$   The goal is to find $\boldsymbol{\theta}$ that explains the data. Hence, using the <a href="http://mlg.eng.cam.ac.uk/zoubin/talks/lect1bayes.pdf" target="_blank">Bayes’ rule</a> write</p>
+
+<p>\begin{align}
+p(\boldsymbol{\theta}\vert \mathbf{X}) = \frac{p(\mathbf{X}\vert \boldsymbol{\theta})p(\boldsymbol{\theta})}{\sum_{\boldsymbol{\theta}}p(\mathbf{X}\vert \boldsymbol{\theta})p(\boldsymbol{\theta})},
+\end{align}</p>
+
+<p>where $p(\boldsymbol{\theta})$ is the prior on the parameters of the model, $p(\mathbf{X}\vert \boldsymbol{\theta})$ is the likelihood of observing the data given parameters of the model, and $p(\boldsymbol{X})=\sum_{\boldsymbol{\theta}}p(\mathbf{X}\vert \boldsymbol{\theta})p(\boldsymbol{\theta})$ is normalization factor.</p>
 
 <p><strong>Modelling sequences</strong></p>
 
-<p>We would like to model a distribution of some sequences of lenght $L$ where every element in the sequence can take $K$ different values. Write the parametric probability distribution for the sequence as a joint probability of elements in the sequence, i.e.
+<p>We would like to model a distribution of sequences of length $L$ where every element in a sequence can take $K$ different values. Write a parametric probability distribution for a sequence as a joint probability of elements in that sequence, i.e.
 \begin{align}
 p(\mathbf{x};\boldsymbol{\theta})=p(x_1, x_2,&hellip;, x_L;\boldsymbol{\theta}),
 \end{align}
-where $\boldsymbol{\theta}$ are parameters of the distribution. Now suppose that we got $N$ examples drawn from this distribution. Denote the data as $\mathbf{X}\in \mathbb{R}^{N\times L\times K}$. The goal is to find $\boldsymbol{\theta}$ that explains the data.</p>
+where $\boldsymbol{\theta}$ are parameters of the distribution and $\mathbf{x}=(x_1, x_2,&hellip;, x_L)\in \mathbb{R}^{L\times K}$ is a sequence. Now suppose that we got $N$ examples drawn from this distribution. Denote the data as $\mathbf{X}\in \mathbb{R}^{N\times L\times K}$. The goal is to find $\boldsymbol{\theta}$ that explains the data. Hence, using the <a href="http://mlg.eng.cam.ac.uk/zoubin/talks/lect1bayes.pdf" target="_blank">Bayes’ rule</a> write</p>
 
 <p>\begin{align}
-p(\boldsymbol{\theta}\vert \mathbf{X}) = \frac{p(\mathbf{X}\vert \boldsymbol{\theta})p(\boldsymbol{\theta})}{\sum_{\boldsymbol{\theta}}p(\mathbf{X}\vert \boldsymbol{\theta})p(\boldsymbol{\theta})}.
+p(\boldsymbol{\theta}\vert \mathbf{X}) = \frac{p(\mathbf{X}\vert \boldsymbol{\theta})p(\boldsymbol{\theta})}{\sum_{\boldsymbol{\theta}}p(\mathbf{X}\vert \boldsymbol{\theta})p(\boldsymbol{\theta})},
 \end{align}</p>
+
+<p>where $p(\boldsymbol{\theta})$ is the prior on the parameters of the model, $p(\mathbf{X}\vert \boldsymbol{\theta})$ is the likelihood of observing the data given parameters of the model, and $p(\boldsymbol{X})=\sum_{\boldsymbol{\theta}}p(\mathbf{X}\vert \boldsymbol{\theta})p(\boldsymbol{\theta})$ is normalization factor.</p>
 
 <p><strong>Partition function</strong></p>
 
@@ -517,6 +554,20 @@ Z(\color{green}{\boldsymbol{b}},\color{red}{\boldsymbol{W}})&amp;=\prod_{l=1}^{L
 </figcaption>
 
 </figure>
+
+<p><strong>BERT</strong></p>
+
+<p><a href="https://arxiv.org/pdf/1810.04805.pdf" target="_blank">BERT</a> (Bidirectional Encoder Representations from Transformers) is a Markov Random Field model. Let $\mathbf{x} = (x_1,&hellip;,x_L)$ be a sequence of random variables $x_i$, each of which is categorical.</p>
+
+<p>\begin{align}
+\phi(\mathbf{x}) = \prod_{l=1}^{L}\phi_{l}(\mathbf{x}) = \exp{\left(\sum_{l=1}^{L}\log{\phi_{l}(\mathbf{x})}\right)}
+\end{align}
+where
+\begin{align}
+\log{\phi_{l}(\mathbf{x})}
+\end{align}</p>
+
+<p>New</p>
 
     </div>
 

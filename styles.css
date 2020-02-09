@@ -387,7 +387,7 @@ small,
 
 .form-control:focus {
   border-color: #006400;
-  box-shadow: 0 0 0 .2rem #006400;
+  box-shadow: 0 0 0 .2rem #000000;
 }
 
 /*************************************************
@@ -842,11 +842,11 @@ article {
 }
 
 .article-container {
-  max-width: 760px;
+  max-width: 960px;
   padding: 0 20px 0 20px;
   margin: 0 auto 0 auto;
 }
-
+/* above before 760 */
 .split-header {
   margin-bottom: 2rem;
 }
@@ -1547,7 +1547,7 @@ a.badge:hover {
 .dark .tag-cloud a:active,
 .dark .tag-cloud a:focus,
 .dark .tag-cloud a:hover {
-  color: #006400;
+  color: #000000;
 }
 
 /*************************************************
@@ -1644,7 +1644,7 @@ a.badge:hover {
 
 .btn-toolbar .btn.btn-primary:hover,
 .btn-toolbar .btn.btn-primary:focus {
-  background-color: #006400 !important;
+  background-color: #000000 !important;
 }
 
 .btn-toolbar .btn.btn-primary:active,
@@ -1655,7 +1655,7 @@ a.badge:hover {
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 .2rem #006400;
+  box-shadow: 0 0 0 .2rem #000000;
 }
 
 /*************************************************
@@ -1667,7 +1667,7 @@ a.badge:hover {
 }
 
 .navbar-light {
-  background: #228B22 !important;
+  background: #000000 !important;
   box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11)
 }
 
@@ -1734,7 +1734,7 @@ nav#navbar-main li.nav-item {
 }
 
 .dropdown-menu {
-  background-color: #228B22 !important;
+  background-color: #000000 !important;
 }
 
 .dropdown-menu > li > a {
@@ -1751,13 +1751,13 @@ nav#navbar-main li.nav-item {
 .dropdown-menu>li>a:hover {
   color: #006400;
   text-decoration: none;
-  background-color: #228B22;
+  background-color: #000000;
 }
 
 .dropdown-menu > .active,
 .dropdown-menu > .active:focus,
 .dropdown-menu > .active:hover {
-  color: #228B22;
+  color: #000000;
   text-decoration: none;
   background-color: #006400;
   outline: 0;
@@ -1768,7 +1768,7 @@ nav#navbar-main li.nav-item {
 .navbar-light .navbar-nav>.open>a:hover,
 .navbar-light .navbar-nav>.open>a:visited {
   color: #fff !important;
-  background-color: #228B22 !important;
+  background-color: #000000 !important;
 }
 
 .navbar-light .navbar-brand {
@@ -1979,9 +1979,9 @@ div.alert a {
  **************************************************/
 
 .docs-article-container {
-  max-width: 760px;
+  max-width: 960px;
 }
-
+/* above before 760 */
 /* Documentation: article footer. */
 
 .docs .body-footer {
@@ -2022,7 +2022,7 @@ div.alert a {
 
 .docs-search .form-control:focus {
   border-color: #006400;
-  box-shadow: 0 0 0 3px #006400;
+  box-shadow: 0 0 0 3px #000000;
 }
 
 /* Docs sidebar. */

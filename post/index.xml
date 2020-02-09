@@ -13,14 +13,14 @@
     
     
     <item>
-      <title>Pseudolikelihood</title>
+      <title>Modeling biological sequences</title>
       <link>https://dauparas.github.io/post/multivariate/</link>
       <pubDate>Fri, 07 Jun 2019 06:44:46 -0400</pubDate>
       
       <guid>https://dauparas.github.io/post/multivariate/</guid>
-      <description>Bayesian inference
-Modelling sequences
-We would like to model a distribution of some sequences of lenght $L$ where every element in the sequence can take $K$ different values. Write the parametric probability distribution for the sequence as a joint probability of elements in the sequence, i.e. \begin{align} p(\mathbf{x};\boldsymbol{\theta})=p(x_1, x_2,&amp;hellip;, x_L;\boldsymbol{\theta}), \end{align} where $\boldsymbol{\theta}$ are parameters of the distribution. Now suppose that we got $N$ examples drawn from this distribution. Denote the data as $\mathbf{X}\in \mathbb{R}^{N\times L\times K}$.</description>
+      <description>Check out Google Colab and arXiv links above!
+Motivation
+Suppose that someone gives you $N$ sequences. Every sequence is of the same length $L$ and every element in a sequence can take $K$ different values. For example those sequences could be aligned DNA sequences which are made up of four base pairs ($K=4$), or aligned protein sequences which are made up of twenty canonical amino acids ($K=20$). Read more here about how multiple sequences are aligned.</description>
     </item>
     
   </channel>
