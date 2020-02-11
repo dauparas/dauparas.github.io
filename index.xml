@@ -7,13 +7,58 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020 Justas Dauparas</copyright>
-    <lastBuildDate>Fri, 07 Jun 2019 06:44:46 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 09 Feb 2020 06:44:46 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Learn it yourself</title>
+      <link>https://dauparas.github.io/post/learning/</link>
+      <pubDate>Sun, 09 Feb 2020 06:44:46 -0400</pubDate>
+      
+      <guid>https://dauparas.github.io/post/learning/</guid>
+      <description>
+
+&lt;h3 id=&#34;theoretical-physics&#34;&gt;Theoretical Physics&lt;/h3&gt;
+
+&lt;h3 id=&#34;machine-learning-blogs&#34;&gt;Machine Learning Blogs&lt;/h3&gt;
+
+&lt;h3 id=&#34;computer-science&#34;&gt;Computer Science&lt;/h3&gt;
+
+&lt;h3 id=&#34;biology&#34;&gt;Biology&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.edx.org/course/introduction-to-biology-the-secret-of-life-3&#34; target=&#34;_blank&#34;&gt;Introduction to Biology - The Secret of Life&lt;/a&gt;,&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;lectures&#34;&gt;Lectures&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.fast.ai/&#34; target=&#34;_blank&#34;&gt;fast.ai&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://web.stanford.edu/class/cs224n/index.html#schedule&#34; target=&#34;_blank&#34;&gt;Natural Language Processing with Deep Learning&lt;/a&gt;, CS224n at Stanford,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://vision.stanford.edu/teaching/cs231n/&#34; target=&#34;_blank&#34;&gt;Convolutional Neural Networks for Visual Recognition&lt;/a&gt; CS231n at Stanford,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sites.google.com/view/berkeley-cs294-158-sp20/home&#34; target=&#34;_blank&#34;&gt;Deep Unsupervised Learning&lt;/a&gt;, CS294-158 at UC Berkeley,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://rail.eecs.berkeley.edu/deeprlcourse/&#34; target=&#34;_blank&#34;&gt;Deep Reinforcement Learning&lt;/a&gt; CS285 at UC Berkeley,&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;books&#34;&gt;Books&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf&#34; target=&#34;_blank&#34;&gt;Pattern Recognition and Machine Learning&lt;/a&gt; by Christopher M. Bishop,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.inference.org.uk/itprnn/book.pdf&#34; target=&#34;_blank&#34;&gt;Information Theory, Inference, and Learning Algorithms&lt;/a&gt; by David J.C. MacKay, &lt;a href=&#34;https://www.youtube.com/watch?v=BCiZc0n6COY&amp;amp;list=PLruBu5BI5n4aFpG32iMbdWoRVAA-Vcso6&#34; target=&#34;_blank&#34;&gt;videos&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://noiselab.ucsd.edu/ECE228/Murphy_Machine_Learning.pdf&#34; target=&#34;_blank&#34;&gt;Machine Learning: A Probabilistic Perspective&lt;/a&gt; by Kevin P. Murphy,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://web4.cs.ucl.ac.uk/staff/D.Barber/pmwiki/pmwiki.php?n=Brml.Online&#34; target=&#34;_blank&#34;&gt;Bayesian Reasoning and Machine Learning&lt;/a&gt; by David Barber,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.deeplearningbook.org/&#34; target=&#34;_blank&#34;&gt;Deep Learning&lt;/a&gt; by Ian Goodfellow, Yoshua Bengio, and Aaron Courville,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.stanford.edu/~hastie/ElemStatLearn/printings/ESLII_print12.pdf&#34; target=&#34;_blank&#34;&gt;The Elements of Statistical Learning&lt;/a&gt; by Trevor Hastie, Robert Tibshirani, and Jerome Friedman,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.stat.cmu.edu/~larry/all-of-statistics/&#34; target=&#34;_blank&#34;&gt;All of Statistics A Concise Course in Statistical Inference&lt;/a&gt; by Larry Wasserman,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.incompleteideas.net/book/RLbook2018.pdf&#34; target=&#34;_blank&#34;&gt;Reinforcement learning: An introduction&lt;/a&gt; by Richard S. Sutton and Andrew G. Barto.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
     
     <item>
       <title>Modeling biological sequences</title>
       <link>https://dauparas.github.io/post/multivariate/</link>
-      <pubDate>Fri, 07 Jun 2019 06:44:46 -0400</pubDate>
+      <pubDate>Sun, 09 Feb 2020 06:44:46 -0400</pubDate>
       
       <guid>https://dauparas.github.io/post/multivariate/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/sokrypton/seqmodels/blob/master/seqmodels.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
