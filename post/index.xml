@@ -21,16 +21,5 @@
       <description>Theoretical Physics Machine Learning Blogs Computer Science Biology  Introduction to Biology - The Secret of Life,  Lectures  fast.ai, Natural Language Processing with Deep Learning, CS224n at Stanford, Convolutional Neural Networks for Visual Recognition CS231n at Stanford, Deep Unsupervised Learning, CS294-158 at UC Berkeley, Deep Reinforcement Learning CS285 at UC Berkeley,  Books  Pattern Recognition and Machine Learning by Christopher M. Bishop, Information Theory, Inference, and Learning Algorithms by David J.</description>
     </item>
     
-    <item>
-      <title>Modeling biological sequences</title>
-      <link>https://dauparas.github.io/post/multivariate/</link>
-      <pubDate>Sun, 09 Feb 2020 06:44:46 -0400</pubDate>
-      
-      <guid>https://dauparas.github.io/post/multivariate/</guid>
-      <description>Check out Google Colab and arXiv links above!
-Motivation
-Suppose that someone gives you $N$ sequences. Every sequence is of the same length $L$ and every element in a sequence can take $K$ different values. For example those sequences could be aligned DNA sequences which are made up of four base pairs ($K=4$), or aligned protein sequences which are made up of twenty canonical amino acids ($K=20$). Read more here about how multiple sequences are aligned.</description>
-    </item>
-    
   </channel>
 </rss>
