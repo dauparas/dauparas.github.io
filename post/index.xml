@@ -13,12 +13,13 @@
     
     
     <item>
-      <title>Learn it yourself</title>
+      <title>Learn it yourself - online resources</title>
       <link>https://dauparas.github.io/post/learning/</link>
       <pubDate>Sat, 25 Apr 2020 06:44:46 -0400</pubDate>
       
       <guid>https://dauparas.github.io/post/learning/</guid>
-      <description>Lectures on Machine Learning  fast.ai, Natural Language Processing with Deep Learning, CS224n at Stanford, Convolutional Neural Networks for Visual Recognition CS231n at Stanford, Deep Unsupervised Learning, CS294-158 at UC Berkeley, Deep Reinforcement Learning CS285 at UC Berkeley,  Machine Learning Books  Pattern Recognition and Machine Learning by Christopher M. Bishop, Information Theory, Inference, and Learning Algorithms by David J.C. MacKay, videos, Machine Learning: A Probabilistic Perspective by Kevin P.</description>
+      <description>This is a short list of lectures and books with links for myself and anyone else who might find them useful.
+Lectures on Machine Learning  fast.ai, Natural Language Processing with Deep Learning, CS224n at Stanford, Convolutional Neural Networks for Visual Recognition CS231n at Stanford, Deep Unsupervised Learning, CS294-158 at UC Berkeley, Deep Reinforcement Learning CS285 at UC Berkeley.  Machine Learning Books  Pattern Recognition and Machine Learning by Christopher M.</description>
     </item>
     
   </channel>

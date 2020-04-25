@@ -11,12 +11,14 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Learn it yourself</title>
+      <title>Learn it yourself - online resources</title>
       <link>https://dauparas.github.io/post/learning/</link>
       <pubDate>Sat, 25 Apr 2020 06:44:46 -0400</pubDate>
       
       <guid>https://dauparas.github.io/post/learning/</guid>
       <description>
+
+&lt;p&gt;This is a short list of lectures and books with links for myself and anyone else who might find them useful.&lt;/p&gt;
 
 &lt;h3 id=&#34;lectures-on-machine-learning&#34;&gt;Lectures on Machine Learning&lt;/h3&gt;
 
@@ -25,7 +27,7 @@
 &lt;li&gt;&lt;a href=&#34;http://web.stanford.edu/class/cs224n/index.html#schedule&#34; target=&#34;_blank&#34;&gt;Natural Language Processing with Deep Learning&lt;/a&gt;, CS224n at Stanford,&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://vision.stanford.edu/teaching/cs231n/&#34; target=&#34;_blank&#34;&gt;Convolutional Neural Networks for Visual Recognition&lt;/a&gt; CS231n at Stanford,&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://sites.google.com/view/berkeley-cs294-158-sp20/home&#34; target=&#34;_blank&#34;&gt;Deep Unsupervised Learning&lt;/a&gt;, CS294-158 at UC Berkeley,&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://rail.eecs.berkeley.edu/deeprlcourse/&#34; target=&#34;_blank&#34;&gt;Deep Reinforcement Learning&lt;/a&gt; CS285 at UC Berkeley,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://rail.eecs.berkeley.edu/deeprlcourse/&#34; target=&#34;_blank&#34;&gt;Deep Reinforcement Learning&lt;/a&gt; CS285 at UC Berkeley.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&#34;machine-learning-books&#34;&gt;Machine Learning Books&lt;/h3&gt;
@@ -50,21 +52,21 @@
 &lt;h3 id=&#34;lectures-on-theoretical-physics-by-david-tong&#34;&gt;Lectures on Theoretical Physics by David Tong&lt;/h3&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/relativity.html&#34; target=&#34;_blank&#34;&gt;Dynamics and Relativity&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/dynamics.html&#34; target=&#34;_blank&#34;&gt;Classical Dynamics&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/em.html&#34; target=&#34;_blank&#34;&gt;Electromagnetism&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/topicsinqm.html&#34; target=&#34;_blank&#34;&gt;Topics in Quantum Mechanics&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/solidstate.html&#34; target=&#34;_blank&#34;&gt;Solid State Physics&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/qhe.html&#34; target=&#34;_blank&#34;&gt;Quantum Hall Effect&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/statphys.html&#34; target=&#34;_blank&#34;&gt;Statistical Physics&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/kinetic.html&#34; target=&#34;_blank&#34;&gt;Kinetic Theory&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/sft.html&#34; target=&#34;_blank&#34;&gt;Statistical Field Theory&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/qft.html&#34; target=&#34;_blank&#34;&gt;Quantum Field Theory&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/gaugetheory.html&#34; target=&#34;_blank&#34;&gt;Gauge Theory&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/tasi.html&#34; target=&#34;_blank&#34;&gt;Solitons&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/gr.html&#34; target=&#34;_blank&#34;&gt;General Relativity&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/cosmo.html&#34; target=&#34;_blank&#34;&gt;Cosmology&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/string.html&#34; target=&#34;_blank&#34;&gt;String Theory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/relativity.html&#34; target=&#34;_blank&#34;&gt;Dynamics and Relativity&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/dynamics.html&#34; target=&#34;_blank&#34;&gt;Classical Dynamics&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/em.html&#34; target=&#34;_blank&#34;&gt;Electromagnetism&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/topicsinqm.html&#34; target=&#34;_blank&#34;&gt;Topics in Quantum Mechanics&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/solidstate.html&#34; target=&#34;_blank&#34;&gt;Solid State Physics&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/qhe.html&#34; target=&#34;_blank&#34;&gt;Quantum Hall Effect&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/statphys.html&#34; target=&#34;_blank&#34;&gt;Statistical Physics&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/kinetic.html&#34; target=&#34;_blank&#34;&gt;Kinetic Theory&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/sft.html&#34; target=&#34;_blank&#34;&gt;Statistical Field Theory&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/qft.html&#34; target=&#34;_blank&#34;&gt;Quantum Field Theory&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/gaugetheory.html&#34; target=&#34;_blank&#34;&gt;Gauge Theory&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/tasi.html&#34; target=&#34;_blank&#34;&gt;Solitons&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/gr.html&#34; target=&#34;_blank&#34;&gt;General Relativity&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/cosmo.html&#34; target=&#34;_blank&#34;&gt;Cosmology&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/string.html&#34; target=&#34;_blank&#34;&gt;String Theory&lt;/a&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 </description>
     </item>
