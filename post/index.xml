@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020 Justas Dauparas</copyright>
-    <lastBuildDate>Sun, 09 Feb 2020 06:44:46 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 25 Apr 2020 06:44:46 -0400</lastBuildDate>
     
 	<atom:link href="https://dauparas.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Learn it yourself</title>
       <link>https://dauparas.github.io/post/learning/</link>
-      <pubDate>Sun, 09 Feb 2020 06:44:46 -0400</pubDate>
+      <pubDate>Sat, 25 Apr 2020 06:44:46 -0400</pubDate>
       
       <guid>https://dauparas.github.io/post/learning/</guid>
       <description>Machine Learning Lectures  fast.ai, Natural Language Processing with Deep Learning, CS224n at Stanford, Convolutional Neural Networks for Visual Recognition CS231n at Stanford, Deep Unsupervised Learning, CS294-158 at UC Berkeley, Deep Reinforcement Learning CS285 at UC Berkeley,  Machine Learning Books  Pattern Recognition and Machine Learning by Christopher M. Bishop, Information Theory, Inference, and Learning Algorithms by David J.C. MacKay, videos, Machine Learning: A Probabilistic Perspective by Kevin P.</description>
