@@ -18,19 +18,7 @@
       <guid>https://dauparas.github.io/post/learning/</guid>
       <description>
 
-&lt;h3 id=&#34;theoretical-physics&#34;&gt;Theoretical Physics&lt;/h3&gt;
-
-&lt;h3 id=&#34;machine-learning-blogs&#34;&gt;Machine Learning Blogs&lt;/h3&gt;
-
-&lt;h3 id=&#34;computer-science&#34;&gt;Computer Science&lt;/h3&gt;
-
-&lt;h3 id=&#34;biology&#34;&gt;Biology&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.edx.org/course/introduction-to-biology-the-secret-of-life-3&#34; target=&#34;_blank&#34;&gt;Introduction to Biology - The Secret of Life&lt;/a&gt;,&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;lectures&#34;&gt;Lectures&lt;/h3&gt;
+&lt;h3 id=&#34;machine-learning-lectures&#34;&gt;Machine Learning Lectures&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.fast.ai/&#34; target=&#34;_blank&#34;&gt;fast.ai&lt;/a&gt;,&lt;/li&gt;
@@ -40,7 +28,7 @@
 &lt;li&gt;&lt;a href=&#34;http://rail.eecs.berkeley.edu/deeprlcourse/&#34; target=&#34;_blank&#34;&gt;Deep Reinforcement Learning&lt;/a&gt; CS285 at UC Berkeley,&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;books&#34;&gt;Books&lt;/h3&gt;
+&lt;h3 id=&#34;machine-learning-books&#34;&gt;Machine Learning Books&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf&#34; target=&#34;_blank&#34;&gt;Pattern Recognition and Machine Learning&lt;/a&gt; by Christopher M. Bishop,&lt;/li&gt;
@@ -51,6 +39,40 @@
 &lt;li&gt;&lt;a href=&#34;https://web.stanford.edu/~hastie/ElemStatLearn/printings/ESLII_print12.pdf&#34; target=&#34;_blank&#34;&gt;The Elements of Statistical Learning&lt;/a&gt; by Trevor Hastie, Robert Tibshirani, and Jerome Friedman,&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.stat.cmu.edu/~larry/all-of-statistics/&#34; target=&#34;_blank&#34;&gt;All of Statistics A Concise Course in Statistical Inference&lt;/a&gt; by Larry Wasserman,&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.incompleteideas.net/book/RLbook2018.pdf&#34; target=&#34;_blank&#34;&gt;Reinforcement learning: An introduction&lt;/a&gt; by Richard S. Sutton and Andrew G. Barto.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;machine-learning-blogs&#34;&gt;Machine Learning Blogs&lt;/h3&gt;
+
+&lt;h3 id=&#34;computer-science-lectures&#34;&gt;Computer Science Lectures&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.mit.edu/alexmv/6.037/sicp.pdf&#34; target=&#34;_blank&#34;&gt;Structure and Interpretation of Computer Programs&lt;/a&gt; by&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;biology-lectures&#34;&gt;Biology Lectures&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.edx.org/course/introduction-to-biology-the-secret-of-life-3&#34; target=&#34;_blank&#34;&gt;Introduction to Biology - The Secret of Life&lt;/a&gt;,&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;david-tong-lectures-on-theoretical-physics&#34;&gt;David Tong: Lectures on Theoretical Physics&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/relativity.html&#34; target=&#34;_blank&#34;&gt;Dynamics and Relativity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/dynamics.html&#34; target=&#34;_blank&#34;&gt;Classical Dynamics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/em.html&#34; target=&#34;_blank&#34;&gt;Electromagnetism&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/topicsinqm.html&#34; target=&#34;_blank&#34;&gt;Topics in Quantum Mechanics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/solidstate.html&#34; target=&#34;_blank&#34;&gt;Solid State Physics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/qhe.html&#34; target=&#34;_blank&#34;&gt;Quantum Hall Effect&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/statphys.html&#34; target=&#34;_blank&#34;&gt;Statistical Physics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/kinetic.html&#34; target=&#34;_blank&#34;&gt;Kinetic Theory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/sft.html&#34; target=&#34;_blank&#34;&gt;Statistical Field Theory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/qft.html&#34; target=&#34;_blank&#34;&gt;Quantum Field Theory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/gaugetheory.html&#34; target=&#34;_blank&#34;&gt;Gauge Theory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/tasi.html&#34; target=&#34;_blank&#34;&gt;Solitons&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/gr.html&#34; target=&#34;_blank&#34;&gt;General Relativity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/cosmo.html&#34; target=&#34;_blank&#34;&gt;Cosmology&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/string.html&#34; target=&#34;_blank&#34;&gt;String Theory&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
     </item>
