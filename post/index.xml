@@ -22,15 +22,5 @@
 Machine Learning Books  Pattern Recognition and Machine Learning by Christopher M. Bishop, Information Theory, Inference, and Learning Algorithms by David J.C. MacKay, videos, Machine Learning: A Probabilistic Perspective by Kevin P. Murphy, Bayesian Reasoning and Machine Learning by David Barber, Deep Learning by Ian Goodfellow, Yoshua Bengio, and Aaron Courville, The Elements of Statistical Learning by Trevor Hastie, Robert Tibshirani, and Jerome Friedman, All of Statistics A Concise Course in Statistical Inference by Larry Wasserman, Reinforcement learning: An introduction by Richard S.</description>
     </item>
     
-    <item>
-      <title>Normalizing Flows</title>
-      <link>https://dauparas.github.io/post/normalizing_flows/</link>
-      <pubDate>Sat, 25 Apr 2020 06:44:46 -0400</pubDate>
-      
-      <guid>https://dauparas.github.io/post/normalizing_flows/</guid>
-      <description> This is a summary of the recent normalizing flows paper.
-Learn about normalizing flows  Normalizing Flows for Probabilistic Modeling and Inference  </description>
-    </item>
-    
   </channel>
 </rss>
