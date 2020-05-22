@@ -342,7 +342,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    1 min read
+    3 min read
   </span>
   
 
@@ -428,13 +428,134 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>This is a summary of the recent normalizing flows paper.</p>
+<p>In progress&hellip;</p>
 
 <h3 id="learn-about-normalizing-flows">Learn about normalizing flows</h3>
 
-<ol>
-<li><a href="https://arxiv.org/pdf/1912.02762.pdf" target="_blank">Normalizing Flows for Probabilistic Modeling and Inference</a></li>
-</ol>
+<ul>
+<li><a href="https://arxiv.org/pdf/1912.02762.pdf" target="_blank"><strong>Review paper</strong>: Normalizing Flows for Probabilistic Modeling and Inference, Papamakarios, Nalisnick et al.</a></li>
+<li><a href="https://arxiv.org/pdf/1908.09257.pdf" target="_blank"><strong>Review paper</strong>: Normalizing Flows: An Introduction and Review of Current Methods, Kobyzev et al.</a></li>
+<li><a href="https://www.youtube.com/watch?v=JBb5sSC0JoY&amp;feature=youtu.be" target="_blank"><strong>Video lecture</strong>: Flow Models &ndash; CS294-158-SP20 Deep Unsupervised Learning</a></li>
+<li><a href="https://iclr.cc/virtual_2020/speaker_4.html" target="_blank"><strong>Video lecture</strong>: Invertible Models and Normalizing Flows, Laurent Dinh, ICLR 2020</a></li>
+<li><a href="https://slideslive.com/38917907/tutorial-on-normalizing-flows" target="_blank"><strong>Video lecture</strong>: Tutorial on normalizing flows, Eric Jang, ICML 2019</a></li>
+<li><a href="https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html" target="_blank"><strong>Blog</strong>: Flow-based Deep Generative Models, Lilian Weng</a></li>
+<li><a href="https://blog.evjang.com/2018/01/nf1.html" target="_blank"><strong>Blog</strong>: Normalizing Flows Tutorial, Eric Jang</a></li>
+</ul>
+
+<p><strong>Definitions</strong></p>
+
+<ul>
+<li>$p_{x}^{*}(\mathbf{x})=p_{x}^{*}(x_1, x_2,&hellip;, x_D) \sim \mathbf{x}\in\mathbb{R}^{D}$, unknown true distribution of data,</li>
+<li>$p_{x}(\mathbf{x})=p_{x}(x_1, x_2,&hellip;, x_D) \sim \mathbf{x}\in\mathbb{R}^{D}$, model distribution of data,</li>
+<li>$p_{u}(\mathbf{u})=p_{u}(u_1, u_2,&hellip;, u_D) \sim \mathbf{u}\in\mathbb{R}^{D}$, simple (normal) distribution,</li>
+<li>$T(\mathbf{u})=\mathbf{x}\in\mathbb{R}^{D}$, transformation function,</li>
+<li>$T^{-1}(\mathbf{x})=\mathbf{u}\in\mathbb{R}^{D}$, inverse transformation function,</li>
+<li>$J_{T}(\mathbf{u})=\frac{\partial}{\partial \mathbf{u}}T(\mathbf{u})=\frac{\partial \mathbf{x}}{\partial \mathbf{u}}\in\mathbb{R}^{D\times D}$, Jacobian matrix of transformation function,</li>
+<li>$J_{T^{-1}}(\mathbf{x})=\frac{\partial}{\partial \mathbf{x}}T^{-1}(\mathbf{x})=\frac{\partial \mathbf{u}}{\partial \mathbf{x}}\in\mathbb{R}^{D\times D}$, Jacobian matrix of inverse transformation function,</li>
+</ul>
+
+
+
+
+<figure>
+
+<img src="./normalizing_flows_2.svg" alt="&lt;b&gt;Figure 1.&lt;/b&gt; A differentiable transformation $T$ maps a D-dimentional vector $\mathbf{u}\in\mathbb{R}^{D}$ to a D-dimentional vector $\mathbf{x}\in\mathbb{R}^{D}$ via yellow arrow. This transformation has a differentiable inverse denoted by $T^{-1}$ that maps $\mathbf{x}$ to $\mathbf{u}$ via purple arrow. Jacobian matrices for these functions are depicted as squares, $J\_{T}(\mathbf{u})\in\mathbb{R}^{D\times D}$ and $J\_{T^{-1}}(\mathbf{x})\in\mathbb{R}^{D\times D}$." width="450" />
+
+
+
+<figcaption data-pre="Figure " data-post=":" >
+  
+  <p>
+    <b>Figure 1.</b> A differentiable transformation $T$ maps a D-dimentional vector $\mathbf{u}\in\mathbb{R}^{D}$ to a D-dimentional vector $\mathbf{x}\in\mathbb{R}^{D}$ via yellow arrow. This transformation has a differentiable inverse denoted by $T^{-1}$ that maps $\mathbf{x}$ to $\mathbf{u}$ via purple arrow. Jacobian matrices for these functions are depicted as squares, $J_{T}(\mathbf{u})\in\mathbb{R}^{D\times D}$ and $J_{T^{-1}}(\mathbf{x})\in\mathbb{R}^{D\times D}$.
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+
+<p><strong>Change of variables</strong></p>
+
+<p>We can express probability density $p_{x}$ in terms of $p_{u}$ using change of variables:</p>
+
+<ul>
+<li>$p_{x}(\mathbf{x})=p_{u}(\mathbf{u})\left|\frac{\partial\mathbf{u}}{\partial\mathbf{x}}\right|=p_{u}(\mathbf{u})\left|\frac{\partial}{\partial\mathbf{x}} T^{-1}(\mathbf{x})\right|=p_{u}(T^{-1}(\mathbf{x}))\left|\det{J_{T^{-1}}(\mathbf{x})}\right|$</li>
+<li>$p_{x}(\mathbf{x})=p_{u}(\mathbf{u})\left|\frac{\partial\mathbf{x}}{\partial\mathbf{u}}\right|^{-1}=p_{u}(\mathbf{u})\left|\frac{\partial}{\partial\mathbf{u}}T(\mathbf{u})\right|^{-1}=p_{u}(\mathbf{u})\left|\det{J_{T}(\mathbf{u})}\right|^{-1}$</li>
+</ul>
+
+<p>given that the transformation $T$ is invertible and both $T$ and $T^{-1}$ are differentiable.</p>
+
+<p><strong>Applications</strong></p>
+
+<ul>
+<li>Sample from $p_{x}(\mathbf{x})$ by sampling points from $p_{u}(\mathbf{u})$, i.e. $\mathbf{x}=T(\mathbf{u})$ where $\mathbf{u} \sim p_{u}(\mathbf{u})$. This requires the ability to sample from $p_{u}(\mathbf{u})$ and to compute the transformation $T$.</li>
+<li>Evaluate model&rsquo;s density using $p_{x}(\mathbf{x})=p_{u}(T^{-1}(\mathbf{x}))\left|\det{J_{T^{-1}}(\mathbf{x})}\right|$. This requires computing the inverse transformation $T^{-1}$ and its Jacobian determinant, and evaluating the density $p_{u}(\mathbf{u})$.</li>
+</ul>
+
+<p><strong>Function composition</strong></p>
+
+
+
+
+<figure>
+
+<img src="./nf_3.svg" alt="&lt;b&gt;Figure 2.&lt;/b&gt; A differentiable transformation $T=T\_3\circ T\_2\circ T\_1$ which is a compostion of three functions $T\_1, T\_2, T\_3$ maps a vector $\mathbf{u}\in\mathbb{R}^{D}$ to a vector $\mathbf{x}\in\mathbb{R}^{D}$ via yellow arrow. The inverse transformation $T^{-1}=T\_{1}^{-1}\circ T\_{2}^{-1}\circ T\_{3}^{-1}$ maps $\mathbf{u}$ to $\mathbf{x}$ via purple arrow. $\mathbf{z}\_{i}$ vectors denote in between states with $\mathbf{u}=\mathbf{z}\_{0}$ and $\mathbf{x}=\mathbf{z}\_{3}$." width="650" />
+
+
+
+<figcaption data-pre="Figure " data-post=":" >
+  
+  <p>
+    <b>Figure 2.</b> A differentiable transformation $T=T_3\circ T_2\circ T_1$ which is a compostion of three functions $T_1, T_2, T_3$ maps a vector $\mathbf{u}\in\mathbb{R}^{D}$ to a vector $\mathbf{x}\in\mathbb{R}^{D}$ via yellow arrow. The inverse transformation $T^{-1}=T_{1}^{-1}\circ T_{2}^{-1}\circ T_{3}^{-1}$ maps $\mathbf{u}$ to $\mathbf{x}$ via purple arrow. $\mathbf{z}_{i}$ vectors denote in between states with $\mathbf{u}=\mathbf{z}_{0}$ and $\mathbf{x}=\mathbf{z}_{3}$.
+    
+    
+    
+  </p> 
+</figcaption>
+
+</figure>
+
+<p>Given three invertible and differentiable transformations $T_1, T_2$ and $T_3$ their composition $T=T_3 \circ T_2 \circ T_1$ is also invertible and differentiable:</p>
+
+<p>\begin{align}
+T(\mathbf{u})&amp;=T_3 \circ T_2 \circ T_1 (\mathbf{u}),\\<br />
+T^{-1}(\mathbf{x})&amp;=(T_3 \circ T_2 \circ T_1)^{-1}(\mathbf{x}) = T_1^{-1} \circ T_2^{-1} \circ T_3^{-1}(\mathbf{x}),\\<br />
+\frac{\partial}{\partial \mathbf{u}}T(\mathbf{u})&amp;=\frac{\partial}{\partial \mathbf{u}}T_3 \circ T_2 \circ T_1 (\mathbf{u})=\frac{\partial T_1(\mathbf{u})}{\partial \mathbf{u}}\frac{\partial T_2(T_1(\mathbf{u}))}{\partial T_1(\mathbf{u})}\frac{\partial T_3(T_2(T_1(\mathbf{u})))}{\partial T_2(T_1(\mathbf{u}))}=\frac{\partial T_1}{\partial \mathbf{u}}\frac{\partial T_2}{\partial T_1}\frac{\partial T_3}{\partial T_2},\\<br />
+\frac{\partial}{\partial \mathbf{x}}T^{-1}(\mathbf{x})&amp;=\frac{\partial}{\partial \mathbf{x}}T_1^{-1} \circ T_2^{-1} \circ T_3^{-1} (\mathbf{x})=\frac{\partial T_3^{-1}(\mathbf{x})}{\partial \mathbf{x}}\frac{\partial T_2^{-1}(T_3^{-1}(\mathbf{x}))}{\partial T_3^{-1}(\mathbf{x})}\frac{\partial T_1^{-1}(T_2^{-1}(T_3^{-1}(\mathbf{x})))}{\partial T_2^{-1}(T_3^{-1}(\mathbf{x}))}=\frac{\partial T_3^{-1}}{\partial \mathbf{x}}\frac{\partial T_2^{-1}}{\partial T_3^{-1}}\frac{\partial T_1^{-1}}{\partial T_2^{-1}},
+\end{align}
+where for differentiation the chain rule was applied. Now to calculate the Jacobian matrix of this transformation we can use the fact that the determinant of a matrix product of square matrices equals the product of their determinants, i.e. $\det{AB}=\det{A}\cdot\det{B}$ where $A, B\in\mathbb{R}^{D\times D}$.</p>
+
+<p>\begin{align}
+\det{\frac{\partial}{\partial \mathbf{u}}T(\mathbf{u})}=&amp;\det{J_{T_3\circ T_2 \circ T_1}(\mathbf{u})}=\det{\frac{\partial T_1}{\partial \mathbf{u}}\frac{\partial T_2}{\partial T_1}\frac{\partial T_3}{\partial T_2}}=\det{J_{T_{1}}(\mathbf{u})}\cdot\det{J_{T_2}(T_{1}(\mathbf{u}))}\cdot\det{J_{T_3}(T_{2}(T_{1}(\mathbf{u})))},\\<br />
+\det{\frac{\partial}{\partial \mathbf{x}}T^{-1}(\mathbf{x})}&amp;=\det{J_{T_1^{-1} \circ T_2^{-1}\circ T_3^{-1}}(\mathbf{x})}=\det{\frac{\partial T_3^{-1}}{\partial \mathbf{x}}\frac{\partial T_2^{-1}}{\partial T_3^{-1}}\frac{\partial T_1^{-1}}{\partial T_2^{-1}}}=\det{J_{T_{3}^{-1}}(\mathbf{x})}\cdot\det{J_{T_2^{-1}}(T_{3}^{-1}(\mathbf{x}))}\cdot\det{J_{T_1^{-1}}(T_2^{-1}(T_{3}^{-1}(\mathbf{x})))}.
+\end{align}</p>
+
+<p><strong>Minimizing loss of log likelihood</strong>
+\begin{align}
+\mathcal{L}(\boldsymbol{\theta})&amp;=-\mathbb{E}_{p_{x}^{*}(\mathbf{x})}\left[\log{p_{x}(\mathbf{x};\boldsymbol{\theta})}\right]\\<br />
+&amp;=-\mathbb{E}_{p_{x}^{*}(\mathbf{x})}\left[\log{p_{u}(T^{-1}(\mathbf{x}; \boldsymbol{\phi});\boldsymbol{\psi})}+\log{\left|\det{J_{T^{-1}}(\mathbf{x}; \boldsymbol{\phi})}\right|}\right]\\<br />
+&amp;\approx-\frac{1}{N}\sum_{n=1}^{N}\log{p_{u}(T^{-1}(\mathbf{x}_{n}; \boldsymbol{\phi});\boldsymbol{\psi})}+\log{\left|\det{J_{T^{-1}}(\mathbf{x}_{n}; \boldsymbol{\phi})}\right|}
+\end{align}</p>
+
+<!-- **Appendix**
+
+
+* $p\_{u}(\mathbf{u})=p\_{x}(\mathbf{x})\left|\frac{\partial\mathbf{x}}{\partial\mathbf{u}}\right|=p\_{x}(\mathbf{x})\left|\frac{\partial}{\partial\mathbf{u}} T(\mathbf{u})\right|=p\_{x}(T(\mathbf{u}))\left|\det{J\_{T}(\mathbf{u})}\right|$
+* $p\_{u}(\mathbf{u})=p\_{x}(\mathbf{x})\left|\frac{\partial\mathbf{u}}{\partial\mathbf{x}}\right|^{-1}=p\_{x}(\mathbf{x})\left|\frac{\partial}{\partial\mathbf{x}}T^{-1}(\mathbf{x})\right|^{-1}=p\_{x}(\mathbf{x})\left|\det{J\_{T^{-1}}(\mathbf{x})}\right|^{-1}$
+
+**Function composition**
+
+Given two invertible and differentiable transformations $T\_1$ and $T\_2$ their composition $T=T\_2 \circ T\_1$ is also invertible and differentiable:
+
+\begin{align}
+\label{eq:sample}\tag{1}
+T^{-1}&=(T\_2 \circ T\_1)^{-1} = T\_1^{-1} \circ T\_2^{-1},\\\\\\
+\tag{2}
+\det{J\_{T\_2 \circ T\_1}(\mathbf{u})}&=\det{\frac{\partial}{\partial \mathbf{u}}{T\_2 \circ T\_1}(\mathbf{u})}=\det{\frac{\partial T\_{1}(\mathbf{u})}{\partial \mathbf{u}}\frac{\partial}{\partial T\_{1}(\mathbf{u})}{T\_2 \circ T\_1}(\mathbf{u})}=\det{J\_{T\_{1}}(\mathbf{u})}\cdot\det{J\_{T\_2}(T\_{1}(\mathbf{u}))},\\\\\\
+\tag{3}
+\det{J\_{T\_1^{-1} \circ T\_2^{-1}}(\mathbf{x})}&=\det{\frac{\partial}{\partial \mathbf{x}}{T\_1^{-1} \circ T\_2^{-1}}(\mathbf{u})}=\det{\frac{\partial T\_{2}^{-1}(\mathbf{x})}{\partial \mathbf{x}}\frac{\partial}{\partial T\_{2}^{-1}(\mathbf{x})}{T\_1^{-1} \circ T\_2^{-1}}(\mathbf{x})}=\det{J\_{T\_{2}^{-1}}(\mathbf{x})}\cdot\det{J\_{T\_1^{-1}}(T\_{2}^{-1}(\mathbf{x}))}
+\end{align} -->
 
     </div>
 
