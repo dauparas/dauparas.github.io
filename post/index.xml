@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020 Justas Dauparas</copyright>
-    <lastBuildDate>Sat, 25 Apr 2020 06:44:46 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jul 2020 06:44:46 -0400</lastBuildDate>
     
 	<atom:link href="https://dauparas.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,11 +15,26 @@
     <item>
       <title>Learn it yourself - online resources</title>
       <link>https://dauparas.github.io/post/learning/</link>
-      <pubDate>Sat, 25 Apr 2020 06:44:46 -0400</pubDate>
+      <pubDate>Sun, 26 Jul 2020 06:44:46 -0400</pubDate>
       
       <guid>https://dauparas.github.io/post/learning/</guid>
       <description>This is a short list of books and lectures with links for myself and anyone else who might find them useful. A book is worth a thousand arXiv papers!
 Machine Learning Books  Pattern Recognition and Machine Learning by Christopher M. Bishop, Information Theory, Inference, and Learning Algorithms by David J.C. MacKay, videos, Machine Learning: A Probabilistic Perspective by Kevin P. Murphy, Bayesian Reasoning and Machine Learning by David Barber, Deep Learning by Ian Goodfellow, Yoshua Bengio, and Aaron Courville, The Elements of Statistical Learning by Trevor Hastie, Robert Tibshirani, and Jerome Friedman, All of Statistics A Concise Course in Statistical Inference by Larry Wasserman, Reinforcement learning: An introduction by Richard S.</description>
+    </item>
+    
+    <item>
+      <title>Differential Geometry</title>
+      <link>https://dauparas.github.io/post/diff_geometry/</link>
+      <pubDate>Sat, 25 Apr 2020 06:44:46 -0400</pubDate>
+      
+      <guid>https://dauparas.github.io/post/diff_geometry/</guid>
+      <description>In progress&amp;hellip;
+Definitions
+ A topological space $M$ is a set of points, endowed with a topology $\mathcal{T}$. This is a collection of open subsets $\{\mathcal{O}_{\alpha}\subset M\}$ which obey: \begin{align} &amp;amp;M\in\mathcal{T}, \emptyset\in\mathcal{T},\\
+&amp;amp;\mathcal{O}_1\in\mathcal{T}, \mathcal{O}_2\in\mathcal{T}\implies \mathcal{O}_1\cap\mathcal{O}_2\in\mathcal{T},\\
+&amp;amp;\mathcal{O}_{\gamma}\in\mathcal{T}\implies \cup_{\gamma}\mathcal{O}_{\gamma}\in\mathcal{T}. \end{align}
+ A homeomorphism between topological spaces $(M, \mathcal{T})$ and $(\tilde{M}, \tilde{\mathcal{T}})$ is a map $f:M\mapsto\tilde{M}$ which is
+ Bijective The function and its inverse are continuous. We say that $f$ is continuous if, for all $\tilde{\mathcal{O}}\in\tilde{\mathcal{T}}, f^{-1}(\tilde{\mathcal{O}})\in\mathcal{T}$.</description>
     </item>
     
     <item>

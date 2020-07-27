@@ -7,13 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020 Justas Dauparas</copyright>
-    <lastBuildDate>Sat, 25 Apr 2020 06:44:46 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jul 2020 06:44:46 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Learn it yourself - online resources</title>
       <link>https://dauparas.github.io/post/learning/</link>
-      <pubDate>Sat, 25 Apr 2020 06:44:46 -0400</pubDate>
+      <pubDate>Sun, 26 Jul 2020 06:44:46 -0400</pubDate>
       
       <guid>https://dauparas.github.io/post/learning/</guid>
       <description>
@@ -68,6 +68,94 @@
 &lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/cosmo.html&#34; target=&#34;_blank&#34;&gt;Cosmology&lt;/a&gt;,&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.damtp.cam.ac.uk/user/tong/string.html&#34; target=&#34;_blank&#34;&gt;String Theory&lt;/a&gt;.&lt;/li&gt;
 &lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Differential Geometry</title>
+      <link>https://dauparas.github.io/post/diff_geometry/</link>
+      <pubDate>Sat, 25 Apr 2020 06:44:46 -0400</pubDate>
+      
+      <guid>https://dauparas.github.io/post/diff_geometry/</guid>
+      <description>&lt;p&gt;In progress&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definitions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;A topological space $M$ is a set of points, endowed with a topology $\mathcal{T}$. This is a collection of open subsets $\{\mathcal{O}_{\alpha}\subset M\}$ which obey:
+\begin{align}
+&amp;amp;M\in\mathcal{T}, \emptyset\in\mathcal{T},\\&lt;br /&gt;
+&amp;amp;\mathcal{O}_1\in\mathcal{T}, \mathcal{O}_2\in\mathcal{T}\implies \mathcal{O}_1\cap\mathcal{O}_2\in\mathcal{T},\\&lt;br /&gt;
+&amp;amp;\mathcal{O}_{\gamma}\in\mathcal{T}\implies \cup_{\gamma}\mathcal{O}_{\gamma}\in\mathcal{T}.
+\end{align}&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;A homeomorphism between topological spaces $(M, \mathcal{T})$ and $(\tilde{M}, \tilde{\mathcal{T}})$ is a map $f:M\mapsto\tilde{M}$ which is&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Bijective&lt;/li&gt;
+&lt;li&gt;The function and its inverse are continuous. We say that $f$ is continuous if, for all $\tilde{\mathcal{O}}\in\tilde{\mathcal{T}}, f^{-1}(\tilde{\mathcal{O}})\in\mathcal{T}$.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;An n-dimensional differentiable manifold is a Hausdorff topological space $M$ such that&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$M$ is locally homeomorphic to $\mathbf{R}^{n}$.&lt;/li&gt;
+&lt;li&gt;Take two open subsets $\mathcal{O}_{\alpha}$ and $\mathcal{O}_{\beta}$ that overlap, so that $\mathcal{O}_{\alpha}\cap \mathcal{O}_{\beta}\neq\emptyset$. We require that the corresponding maps $\phi_{\alpha}:\mathcal{O}_{\alpha}\rightarrow U_{\alpha}$ and $\phi_{\beta}:\mathcal{O}_{\beta}\rightarrow U_{\beta}$ are compatible, meaning that the map $\phi_{\alpha}\circ \phi_{\beta}^{-1}: \phi_{\beta}(\mathcal{O}_{\alpha}\cap \mathcal{O}_{\beta})\rightarrow \phi_{\alpha}(\mathcal{O}_{\alpha}\cap \mathcal{O}_{\beta})$ is infinitely differentiable.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The maps $\phi_{\alpha}$ are called charts and the collection of charts is called an atlas. You can think of each chart as providing a coordinate system to label the region $\mathcal{O}_{\alpha}$ of $M$. The coordinate associated to $p\in\mathcal{O}_{\alpha}$ is
+\begin{align}
+\phi_{\alpha}(p)=(x^{1}(p),&amp;hellip;,x^{n}(p))
+\end{align}
+We write the coordinate is shorthand as simply $x^{\mu}(p)$, with $\mu=1,&amp;hellip;,n$. The maps $\phi_{\alpha}\circ \phi_{\beta}^{-1}$ take us between different coordinate systems and are called &lt;i&gt;transition functions&lt;/i&gt;. The compatibility condition is there to ensure that there is no
+inconsistency between these different coordinate systems.&lt;/p&gt;
+
+&lt;p&gt;The advantage of locally mapping a manifold to $\mathbf{R}^n$ is that we can now import our
+knowledge of how to do maths on $\mathbf{R}^n$.&lt;/p&gt;
+
+&lt;p&gt;We say that a function $f:M\rightarrow\mathbf{R}$ is smooth, if the map $f\circ \phi^{-1}: U\rightarrow \mathbf{R}$ is smooth for all charts $\phi$.&lt;/p&gt;
+
+&lt;p&gt;Similarly, we say that a map $f:M\rightarrow N$ between two manifolds $M$ and $N$ is smooth if the map $\phi\circ f \circ \phi^{-1}:U\rightarrow V$ is smooth for all charts $\phi: M\rightarrow U\subset\mathbf{R}^{dim(M)}$ and $\psi: N\rightarrow V\subset\mathbf{R}^{dim(N)}$&lt;/p&gt;
+
+&lt;p&gt;A &lt;i&gt;diffeomorphism&lt;/i&gt; is defined to be a smooth homeomorphism $f:M\rightarrow N$. In other
+words it is an invertible, smooth map between manifolds $M$ and $N$ that has a smooth inverse. If such a diffeomorphism exists then the manifolds $M$ and $N$ are said to be diffeomorphic. The existence of an inverse means $M$ and $N$ necessarily have the same dimension.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tangent Spaces&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Consider a function $f:M\rightarrow\mathbf{R}$. To differentiate the function at some point $p$, we introduce a chart $\phi=(x^{1},&amp;hellip;,x^{n})$ in a neighbourhood of $p$. We can then construct the
+map $f\circ \phi^{-1}:U\rightarrow\mathbf{R}$ with $U\subset\mathbf{R}^{n}$.  But we know how to differentiate functions on $\mathbf{R}^{n}$ and this gives us a way to differentiate functions on $M$, namely&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+\left.\frac{\partial f}{\partial x^{\mu}}\right|_{p}:=\left.\frac{\partial\left(f \circ \phi^{-1}\right)}{\partial x^{\mu}}\right|_{\phi(p)}
+\end{align}&lt;/p&gt;
+
+&lt;p&gt;Clearly this depends on the choice of chart $\phi$ and coordinates $x^{\mu}$. We would like to
+give a coordinate independent definition of differentiation, and then understand what
+happens when we choose to describe this object using different coordinates.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tangent Vectors&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We will consider smooth functions over a manifold $M$. We denote the set of all smooth
+functions as $C^{\infty}(M)$.&lt;/p&gt;
+
+&lt;p&gt;A &lt;i&gt;tangent vector&lt;/i&gt; $X_{p}$ is an object that differentiates functions at a point $p\in M$. Specifically, $X_p:C^{\infty}(M)\rightarrow \mathbf{R}$ satisfying&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Linearity: $X_{p}(f+g)=X_{p}(f)+X_{p}(g)$ for all $f,g\in C^{\infty}(M)$.&lt;/li&gt;
+&lt;li&gt;$X_{p}(f)=0$ when $f$ is the constant function.&lt;/li&gt;
+&lt;li&gt;Leibnizarity: $X_{p}(fg)=f(p)X_{p}(g)+X_{p}(f)g(p)$ for all $f,g\in C^{\infty}(M)$. This is a product rule.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Theorem:&lt;/p&gt;
+
+&lt;p&gt;The set of all tangent vectors at point $p$ forms an n-dimensional vector space. We call this space the &lt;i&gt;tangent space&lt;/i&gt; $T_{p}(M)$. The tangent vectors $\left.\partial_{\mu}\right|_{p}$ provide a basis for $T_{p}(M)$. This means that we can write any tangent vector as&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+X_{p}=X^{\mu}\left.\partial_{\mu}\right|_{p}
+\end{align}&lt;/p&gt;
+
+&lt;p&gt;with $X^{\mu}=X_{p}(x^{\mu})$ the components of the tangent vector in this basis.&lt;/p&gt;
 </description>
     </item>
     
