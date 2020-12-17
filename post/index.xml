@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020 Justas Dauparas</copyright>
-    <lastBuildDate>Sun, 26 Jul 2020 06:44:46 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 16 Dec 2020 06:44:46 -0400</lastBuildDate>
     
 	<atom:link href="https://dauparas.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AlphaFold 2 &amp; Equivariance</title>
+      <link>https://dauparas.github.io/post/af2/</link>
+      <pubDate>Wed, 16 Dec 2020 06:44:46 -0400</pubDate>
+      
+      <guid>https://dauparas.github.io/post/af2/</guid>
+      <description>Fabian Fuchs &amp;amp; Justas Dauparas
+A few weeks ago, in the latest CASP competition for protein structure prediction (CASP14), DeepMind&amp;rsquo;s AlphaFold 21 outperformed all its competitors with an unprecedented margin. In this blog post, we aim to shed light on one of the important building blocks that distinguishes AlphaFold 2 from the other approaches and likely contributed to their success: an equivariant structure prediction module.
+In short: this module is a neural network that iteratively refines the structure predictions while respecting and leveraging an important symmetry of the problem, namely that of roto-translations.</description>
+    </item>
     
     <item>
       <title>Learn it yourself - online resources</title>
